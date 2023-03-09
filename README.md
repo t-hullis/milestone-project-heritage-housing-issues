@@ -1,5 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 ## Gitpod Template Instructions
 
 Welcome,
@@ -63,17 +61,32 @@ Although your friend has an excellent understanding of property prices in her ow
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
-
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
-
+* Hypothesis: There is a correlation between the attributes of a house and its sale price. This correlation can be demonstrated and validated through data visualizations.
+* Hypothesis: It is possible to predict the sale price of a house in Ames, Iowa based on certain variables, including the characteristics of the house and the location. Using ML model predict prices.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 * List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
+* **Business Requirement 1:** Data Visualization and Correlation study
+	* As a client, I will inspect the data related to the houses, so i can discover how the sales prices are linked to the different attributes
+	* As a client, I will conduct a correlation study (Pearson and Spearman) to understand better how the attributes are correlated to the house sale price.
+	* As a client, I will plot the main variables against sale price to visualize insights.
+
+* **Business Requirement 2:** Regression and Data Analysis
+	* As a client, I want to predict the house sale price from the four inherited houses and any other house in Ames, Iowa, using a machine learning model.
+	* We want to build a regression model, where the target is the sale price.
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+### Predict Tenure
+#### Regression Model
+* We want an ML model to predict the sales price, in pounds, for a house in Ames, Iowa. A target variable is a discrete number. We consider a **regression model**, which is supervised and uni-dimensional.
+* Our ideal outcome is to provide clients with reliable insight into sales prices of houses with a higher sense of loyalty.
+* The model success metrics are
+	* At least 0.75 for R2 score, on train and test set
+	* The ML model is considered a failure if:
+		* 
+
 
 
 ## Dashboard Design
@@ -122,5 +135,4 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
-
+* In case you would like to thank the peopl
