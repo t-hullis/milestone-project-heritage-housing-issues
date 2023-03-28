@@ -1,5 +1,5 @@
 import streamlit as st
-from app_pages.multi_page import MultiPage
+from app_pages.multipage import MultiPage
 from app_pages.page_summary import page_summary_body
 from app_pages.page_sales_price_summary import p2_sale_price_study
 from app_pages.page_predict import page_3_predict_body
