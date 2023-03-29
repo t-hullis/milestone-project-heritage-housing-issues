@@ -110,7 +110,7 @@ def plot_numerical(df, col, target_var):
     st.pyplot(fig)
 
 
-def correlation_to_sale_price(df_eda, vars_to_study):
+def correlation_to_sale_price(df, vars_to_study):
     target_var = 'SalePrice'
     for col in ['GarageArea', 'GrLivArea', 'OverallQual', 'TotalBsmtSF', 'YearBuilt']:
         plot_numerical(df_eda, col, target_var)
