@@ -7,7 +7,7 @@ from datetime import date
 def page_3_predict_body():
     # load predict sale_price files
     version = 'v1'
-    sale_price_pipe = load_pkl_file(f"outputs/ml_pipeline/predict_sale_price/{version}/best_regressor_pipeline.pkl")
+    sale_price_pipe = load_pkl_file(f"outputs/ml_pipeline/predict_sale_price/{version}/final_regressor_pipeline.pkl")
     sale_price_features = (pd.read_csv(f"outputs/ml_pipeline/predict_sale_price/{version}/X_train.csv")
                                         .columns
                                         .to_list())

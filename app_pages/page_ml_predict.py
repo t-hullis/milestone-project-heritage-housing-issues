@@ -9,7 +9,7 @@ def page_5_ml_predict_body():
 
     # Load sale price pipeline files
     version = 'v1'
-    sale_price_pipe = load_pkl_file(f"outputs/ml_pipeline/predict_sale_price/{version}/best_regressor_pipeline.pkl")
+    sale_price_pipe = load_pkl_file(f"outputs/ml_pipeline/predict_sale_price/{version}/final_regressor_pipeline.pkl")
     sale_price_features = pd.read_csv(f"outputs/ml_pipeline/predict_sale_price/{version}/X_train.csv")
     sale_price_importance = plt.imread(f"outputs/ml_pipeline/predict_sale_price/{version}/features_importance.png")
     X_train = pd.read_csv(f"outputs/ml_pipeline/predict_sale_price/{version}/X_train.csv")
