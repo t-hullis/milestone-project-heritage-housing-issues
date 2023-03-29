@@ -77,15 +77,15 @@ def DrawInputsWidgets():
 		feature = "GrLivArea"
 		st_widget = st.number_input(
 			label= feature,
-			min_value= 0, 
-			max_value= 10,
+			min_value= int(df[feature].min()*percentageMin), 
+			max_value= int(df[feature].max()*percentageMax),
 			value= int(df[feature].median()), 
             step = 1       
 			)
 	X_live[feature] = st_widget
 
 	with col2:
-		feature = "KitchenQual"
+		feature = "GarageArea"
 		st_widget = st.number_input(
 			label= feature,
 			min_value= int(df[feature].min()*percentageMin), 
@@ -99,8 +99,8 @@ def DrawInputsWidgets():
 		feature = "OverallQual"
 		st_widget = st.number_input(
 			label= feature,
-			min_value= int(df[feature].min()*percentageMin), 
-			max_value= int(df[feature].max()*percentageMax),
+			min_value= 0,
+			max_value= 10,
 			value= int(df[feature].median()), 
             step= 50
 			)
