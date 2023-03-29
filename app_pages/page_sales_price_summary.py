@@ -65,8 +65,8 @@ def p2_sale_price_study():
     if st.checkbox("Correlation of variable to Sale Price"):
         correlation_to_sale_price(df, vars_to_study)
 
-    if st.checkbox("Sales Price per Variable"):
-        sale_price_per_variable(df_eda)
+    # if st.checkbox("Sales Price per Variable"):
+    #     sale_price_per_variable(df_eda)
 
 
 # Correlation heatmaps 

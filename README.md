@@ -70,7 +70,7 @@ This can be explored using correlation studdies.
 
 * **Business Requirement 1:** Data Visualization and Correlation study
 	* As a client, I will inspect the data related to the houses, so i can discover how the sales prices are linked to the different attributes
-	* As a client, I will conduct a correlation study (Pearson and Spearman) to understand better how the attributes are correlated to the house sale price.
+	* As a client, I will conduct a Pearson and Spearmans correlation study to understand how the attributes are correlated to the house sale price.
 	* As a client, I will plot the main variables against sale price to visualize insights.
 
 * **Business Requirement 2:** Regression and Data Analysis
@@ -118,9 +118,18 @@ This can be explored using correlation studdies.
 * the business/client requirements.
 
 ### Page 2 - Sale Price Study
+This page answers the first buissness requirement:
+* Shows dataset used.
+* Ticking box, displays the variable compared to sales price on graph plot.
+* Ticking box, displays Spearmanns Correlations
+* Ticking box displys PPS and correlations
+
 
 
 ### Page 3 - House Price Prediction
+This page answers the second buissness requirements:
+*
+
 
 
 
