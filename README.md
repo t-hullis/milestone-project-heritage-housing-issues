@@ -62,8 +62,11 @@ Although your friend has an excellent understanding of property prices in her ow
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 ## Hypothesis and how to validate?
-* Hypothesis: There is a correlation between the attributes of a house and its sale price. This correlation can be demonstrated and validated through data visualizations.
-* Hypothesis: It is possible to predict the sale price of a house in Ames, Iowa based on certain variables, including the characteristics of the house and the location. Using ML model predict prices.
+* Hypothesis 1: There is a correlation between the attributes of a house and its sale price. This correlation can be demonstrated and validated through data visualizations.
+* Hypothesis 2: There is a correlation between the Overall Quality of a house and its saleprice. This can be explored using correlation studdies.
+* Hypothesis 3: There is a correlation betweenth year a house was built and the saleprice of the house. This can be explored using correlation studdies.
+* Hypothesis 4: There is a correlation between saleprice and the square footage of the house.
+This can be explored using correlation studdies.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 * List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.

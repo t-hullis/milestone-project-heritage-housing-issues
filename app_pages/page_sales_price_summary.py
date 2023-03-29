@@ -54,6 +54,15 @@ def p2_sale_price_study():
         f"* A churned customer typically doesn't have tech support. \n"
         f"* A churned customer doesn't have online security. \n"
         f"* A churned customer typically has low tenure levels. \n"
+
+
+        f"The correlation indications and plots in the noptebook are below. "
+        f"It is indicated that: \n"
+        f"* The sale price is generally higher for larger houses (`Ground Living Area`). \n"
+        f"* The sale price is generally higher for homes of higher overall quality \n"
+        f"* The sale price is sometimes higher if it was built recently. "
+        f"This occurs due to the newer the house construction (`Year Built` or `Remodel`), "
+        f"the higher generally in quality houses(`Overall Quality`). \n"
     )
 
     # Code copied from "02 - Churned Customer Study" notebook - "EDA on selected variables" section
@@ -81,20 +90,19 @@ def churn_level_per_variable(df_eda):
             plot_numerical(df_eda, col, target_var)
 
 
-# code copied from "02 - Churned Customer Study" notebook - "Variables Distribution by Churn" section
-def plot_categorical(df, col, target_var):
-    fig, axes = plt.subplots(figsize=(12, 5))
-    sns.countplot(data=df, x=col, hue=target_var,
-                  order=df[col].value_counts().index)
-    plt.xticks(rotation=90)
-    plt.title(f"{col}", fontsize=20, y=1.05)
-    st.pyplot(fig)  # st.pyplot() renders image, in notebook is plt.show()
 
 
 # code copied from "02 - Churned Customer Study" notebook - "Variables Distribution by Churn" section
+
+
+def regr_level_per_variable(df_eda, target_var):
+    
+    for col in df_eda.drop([target_var], axis=1).columns.to_list():
+            plot_numerical(df_eda, col, target_var)
+
+
 def plot_numerical(df, col, target_var):
     fig, axes = plt.subplots(figsize=(8, 5))
-    sns.histplot(data=df, x=col, hue=target_var, kde=True, element="step")
-    plt.title(f"{col}", fontsize=20, y=1.05)
-    st.pyplot(fig)  # st.pyplot() renders image, in notebook is plt.show()
-
+    fig = sns.lmplot(data=df, x=col, y=target_var, ci=None) 
+    plt.title(f"{col}", fontsize=20,y=1.05)
+    st.pyplot(fig) # st.pyplot() renders image, in notebook is plt.show()
