@@ -50,9 +50,6 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 |SalePrice|Sale Price|34900 - 755000|
 
 
-
-
-
 ## Business Requirements
 As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
 
@@ -81,20 +78,22 @@ This can be explored using correlation studdies.
 	* We want to build a regression model, where the target is the sale price.
 
 ## ML Business Case
-### Predict Tenure
+### Predict Sales Price
 #### Regression Model
 * We want an ML model to predict the sales price, in pounds, for a house in Ames, Iowa. A target variable is a discrete number. We consider a **regression model**, which is supervised and uni-dimensional.
 * Our ideal outcome is to provide clients with reliable insight into sales prices of houses with a higher sense of loyalty.
 * The model success metrics are
 	* At least 0.75 for R2 score, on train and test set
 	* The ML model is considered a failure if:
-		* 
+		* the R2 score is below 0.75 on the train and test sets, and/or if the model's predictions are more than 50% off for 30% of inputs after 12 months of use. 
 
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+### Page 1 - Quick Summary
+* terms and jargon;
+* information on the dataset; and
+* the business/client requirements.
 
 
 

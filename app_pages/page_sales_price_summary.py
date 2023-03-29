@@ -21,7 +21,7 @@ def p2_sale_price_study():
 
     # Set dataframe filtered for only variables to study
     df_eda = df.filter(vars_to_study + ['SalePrice'])
-    
+
     st.write("### House Value Estimator")
     st.info(
         f"#### Business Requirement 1\n"
@@ -66,7 +66,7 @@ def p2_sale_price_study():
         correlation_to_sale_price(df, vars_to_study)
 
     if st.checkbox("Sales Price per Variable"):
-        sale_price_per_variable(df)
+        sale_price_per_variable(df_eda)
 
 
 # Correlation heatmaps 
