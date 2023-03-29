@@ -85,13 +85,16 @@ def p2_sale_price_study():
         df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
         heatmap_pps(df=pps_matrix, threshold=0.15, figsize=(20, 12), font_annot=15)
 
-
+ # Set dataframe filtered for only variables to study
+df_eda = df.filter(vars_to_study + ['SalePrice'])
 # Copied from Data_cleaning notebook - correlation and pps analysis 
 
 def sale_price_per_variable(df_eda):
     """  scatterplots vs SalePrice """
+       # Set dataframe filtered for only variables to study
+    df_eda = df.filter(vars_to_study + ['SalePrice'])
     target_var = 'SalePrice'
-    for col in df.drop([target_var], axis=1).columns.to_list():
+    for col in df_eda.drop([target_var], axis=1).columns.to_list():
         scatter_plot(df, col, target_var)
         print("\n\n")
 
