@@ -16,6 +16,9 @@ def p2_sale_price_study():
     # load data
     df = load_house_data()
 
+     # Set dataframe filtered for only variables to study
+    df_eda = df.filter(vars_to_study + ['SalePrice'])
+
     # hard copied from churned customer study notebook
     vars_to_study = ['OverallQual', 'GrLivArea', 'YearBuilt', '1stFlrSF', 'GarageArea']
 
@@ -85,8 +88,7 @@ def p2_sale_price_study():
         df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
         heatmap_pps(df=pps_matrix, threshold=0.15, figsize=(20, 12), font_annot=15)
 
- # Set dataframe filtered for only variables to study
-df_eda = df.filter(vars_to_study + ['SalePrice'])
+
 # Copied from Data_cleaning notebook - correlation and pps analysis 
 
 def sale_price_per_variable(df_eda):
