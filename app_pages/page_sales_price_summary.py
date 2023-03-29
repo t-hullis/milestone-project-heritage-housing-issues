@@ -58,12 +58,12 @@ def p2_sale_price_study():
     
 
    # Code copied from "02 - Churned Customer Study" notebook - "EDA on selected variables" section
-    df_eda = df.filter(vars_to_study + ['SalePrice'])
+
     if st.checkbox("Correlation of variable to Sale Price"):
-        correlation_to_sale_price(df_eda, vars_to_study)
+        correlation_to_sale_price(df, vars_to_study)
 
     if st.checkbox("Sales Price per Variable"):
-        sale_price_per_variable(df_eda)
+        sale_price_per_variable(df)
 
 
 # Correlation heatmaps 
@@ -92,7 +92,7 @@ def sale_price_per_variable(df_eda):
     """  scatterplots vs SalePrice """
     target_var = 'SalePrice'
     for col in df_eda.drop([target_var], axis=1).columns.to_list():
-        scatter_plot(df_eda, col, target_var)
+        scatter_plot(df, col, target_var)
         print("\n\n")
 
 def scatter_plot(df, col, target_var):
