@@ -126,16 +126,17 @@ def DrawInputsWidgets():
 			)
 	X_live[feature] = st_widget
 
-	with col6:
-		feature = "YearRemodAdd"
-		st_widget = st.number_input(
-			label= feature,
-			min_value= int(df[feature].min()*percentageMin), 
-			max_value= date.today().year,
-			value= int(df[feature].median()), 
-            step= 1
-			)
-	X_live[feature] = st_widget
+
+	# with col6:
+	# 	feature = "YearRemodAdd"
+	# 	st_widget = st.number_input(
+	# 		label= feature,
+	# 		min_value= int(df[feature].min()*percentageMin), 
+	# 		max_value= date.today().year,
+	# 		value= int(df[feature].median()), 
+    #         step= 1
+	# 		)
+	# X_live[feature] = st_widget
 
 
 	# st.write(X_live)
