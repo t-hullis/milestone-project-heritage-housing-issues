@@ -63,22 +63,27 @@ def p2_sale_price_study():
         correlation_to_sale_price(df_eda, vars_to_study)
 
     if st.checkbox("Sales Price per Variable"):
-        sales_price_per_variable(df_eda)
+        sale_price_per_variable(df_eda)
 
 
 # Correlation heatmaps 
 
-    if st.checkbox("Pearson Correlation"):
-        heatmap_corr(df=df_corr_pearson, threshold=0.4,
-                     figsize=(20, 12), font_annot=12)
+    if st.checkbox("Spearman Correlations"):
+        
+        df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
+        heatmap_corr(df=df_corr_spearman, threshold=0.6, figsize=(20, 12), font_annot=15)
 
-    if st.checkbox("Spearman Correlation"):
-        heatmap_corr(df=df_corr_spearman, threshold=0.4,
-                     figsize=(20, 12), font_annot=12)
+    # Checkbox widget to display the Pearson correlation information
+    if st.checkbox("Peason Correlations"):
+       
+        df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
+        heatmap_corr(df=df_corr_pearson, threshold=0.6, figsize=(20, 12), font_annot=15)
 
+    # Checkbox widget to display the PPS information
     if st.checkbox("Predictive Power Score"):
-        heatmap_pps(df=pps_matrix, threshold=0.2,
-                    figsize=(20, 12), font_annot=12)
+        
+        df_corr_pearson, df_corr_spearman, pps_matrix = CalculateCorrAndPPS(df)
+        heatmap_pps(df=pps_matrix, threshold=0.15, figsize=(20, 12), font_annot=15)
 
 
 # Copied from Data_cleaning notebook - correlation and pps analysis 
