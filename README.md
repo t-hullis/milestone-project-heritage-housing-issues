@@ -87,6 +87,28 @@ This can be explored using correlation studdies.
 	* The ML model is considered a failure if:
 		* the R2 score is below 0.75 on the train and test sets, and/or if the model's predictions are more than 50% off for 30% of inputs after 12 months of use. 
 
+## User Stories
+
+### Epic 1   Information Gathering and Data Collection
+* User Story 1: As a coder, I want to identify and collect relevant data from the source, so that we have access to accurate and reliable data.
+
+### Epic 2   Data Visualization, Cleaning, and Preparation
+* User Story 2: As a coder, I want to clean and preprocess the data, so that it is fit for modeling.
+
+* User Story 2: As a coder, I want to clean and preprocess the data, so that it is fit for modeling.
+
+### Epic 3   Model Training, Optimization, and Validation 
+* User Story 1: As a data scientist, I want to select and train a model that can accurately predict house prices based on the given data.
+
+* User Story 2: As a coder, I want to optimize the model's hyperparameters to improve its accuracy and performance.
+
+* User Story 3: As a coder, I want to validate the model's performance using a test dataset, so that we can ensure that it is generalizable to new data.
+
+### Epic 4   Dashboard Planning, Designing, and Development
+* User Story 1: As a coder, I want to plan and design a dashboard that can display the predicted house prices in a user-friendly way.
+
+###  Epic 5  Dashboard Deployment and Release
+* User Story 1: As a coder, I want to deploy the dashboard to a production environment, so that it can be accessed by end-users.
 
 
 ## Dashboard Design
@@ -94,6 +116,11 @@ This can be explored using correlation studdies.
 * terms and jargon;
 * information on the dataset; and
 * the business/client requirements.
+
+### Page 2 - Sale Price Study
+
+
+### Page 3 - House Price Prediction
 
 
 

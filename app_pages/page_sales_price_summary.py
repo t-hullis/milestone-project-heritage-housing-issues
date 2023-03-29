@@ -96,7 +96,7 @@ def sale_price_per_variable(df_eda):
        # Set dataframe filtered for only variables to study
     target_var = 'SalePrice'
     for col in df_eda.drop([target_var], axis=1).columns.to_list():
-        scatter_plot(df, col, target_var)
+        scatter_plot(df_eda, col, target_var)
         print("\n\n")
 
 def scatter_plot(df, col, target_var):
