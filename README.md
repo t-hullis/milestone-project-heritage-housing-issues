@@ -1,22 +1,6 @@
-## Gitpod Template Instructions
+# Heritage Housing Issues
 
-Welcome,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Gitpod Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Gitpod Template Instructions at least once, though! It contains some important information about Gitpod and the extensions we use. 
-
-## Gitpod Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+This is a Machine Learning project, where i will provide a app which uses python, to perform  Data Analysis and Data Visualization, to be shown on a Streamlit powered front end. This is my final project as a student of the code instute.
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
@@ -128,18 +112,32 @@ This page answers the first buissness requirement:
 
 ### Page 3 - House Price Prediction
 This page answers the second buissness requirements:
-*
+* Able to input house attributes to produce a prediction on the sale price
+* Show the value of the house predicted
+* Display house data of friend that wishes to know there value
+* Show the value of her houses
+
+### Page 4  -  Hypothosis and Validation
+* This page shows a breif description of the hyposis of this project
+
+### Page 5  -  ML Model
+* Shows this pipeline used
+* Shows the most important features
+* Shows pipeline performance
 
 
-
+## Fixed Bugs
+* There was a miss match between two of my pipelines in the modeling and evaluation notebook which caused 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+* Graph for feature importance wont save, therefore wont show up on the ML model page of my app.
+* In Modeling and evuation notebook, my most important features have been selected wrong. GrLivArea has been missed off and replaced by a less important variable. This was partially solved by hand coding in the most important vars into my pipeline at a later step, therefore writing over the "wrong" set of most important vars.
+
 
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://p5-heritage-housing.herokuapp.com
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -151,13 +149,18 @@ This page answers the second buissness requirements:
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
 
+NumPy: Used for its matrix abilities
+Pandas: Used for thier dataframes throughout the project
+MatPlotLib: To visualize our data
+Seaborn: To visualize our data
+Streamlit: an app framework for ML dashboards. Used for the dashboarding for this project.
+PPS Score: to detect linear or non-linear relationships between two columns. 
+Feature Engine: a library with transformers to engineer and select features to use in machine learning models. Used for data cleaning and data transformation in the Feature Engineering Jupyter notebook.
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* The code institue for use for the chernomter project to base this project off, as well as the template for this project.
 
 ### Content 
 
