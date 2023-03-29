@@ -71,8 +71,10 @@ def DrawInputsWidgets():
 	# Then draw the widget based on the numerical or categorical type
 	# and set initial values
 
+# GrLivArea,KitchenQual,OverallQual,TotalBsmtSF,YearBuilt
+
 	with col1:
-		feature = "OverallQual"
+		feature = "GrLivArea"
 		st_widget = st.number_input(
 			label= feature,
 			min_value= 0, 
@@ -83,7 +85,7 @@ def DrawInputsWidgets():
 	X_live[feature] = st_widget
 
 	with col2:
-		feature = "GrLivArea"
+		feature = "KitchenQual"
 		st_widget = st.number_input(
 			label= feature,
 			min_value= int(df[feature].min()*percentageMin), 
@@ -94,7 +96,7 @@ def DrawInputsWidgets():
 	X_live[feature] = st_widget
 
 	with col3:
-		feature = "TotalBsmtSF"
+		feature = "OverallQual"
 		st_widget = st.number_input(
 			label= feature,
 			min_value= int(df[feature].min()*percentageMin), 
@@ -105,7 +107,7 @@ def DrawInputsWidgets():
 	X_live[feature] = st_widget
 
 	with col4:
-		feature = "GarageArea"
+		feature = "TotalBsmtSF"
 		st_widget = st.number_input(
 			label= feature,
 			min_value= int(df[feature].min()*percentageMin), 
