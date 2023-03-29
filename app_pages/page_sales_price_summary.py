@@ -16,12 +16,12 @@ def p2_sale_price_study():
     # load data
     df = load_house_data()
 
-     # Set dataframe filtered for only variables to study
-    df_eda = df.filter(vars_to_study + ['SalePrice'])
-
     # hard copied from churned customer study notebook
     vars_to_study = ['OverallQual', 'GrLivArea', 'YearBuilt', '1stFlrSF', 'GarageArea']
 
+    # Set dataframe filtered for only variables to study
+    df_eda = df.filter(vars_to_study + ['SalePrice'])
+    
     st.write("### House Value Estimator")
     st.info(
         f"#### Business Requirement 1\n"
