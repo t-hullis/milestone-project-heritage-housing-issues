@@ -54,8 +54,7 @@ def p2_sale_price_study():
         f"* The sale price is generally higher for larger houses. \n"
         f"* The sale price is generally higher for homes of higher overall quality \n"
         f"* The sale price is sometimes higher if it was built recently. "
-        f"This occurs due to the newer the house construction (`Year Built` or `Remodel`), "
-        f"the higher generally in quality houses(`Overall Quality`). \n"
+       
     )
 
     

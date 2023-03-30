@@ -156,7 +156,7 @@ MatPlotLib: To visualize our data
 Seaborn: To visualize our data
 Streamlit: an app framework for ML dashboards. Used for the dashboarding for this project.
 PPS Score: to detect linear or non-linear relationships between two columns. 
-Feature Engine: a library with transformers to engineer and select features to use in machine learning models. Used for data cleaning and data transformation in the Feature Engineering Jupyter notebook.
+Feature Engine: select features to use in machine learning models and tranform
 
 ## Credits 
 
@@ -168,12 +168,3 @@ Feature Engine: a library with transformers to engineer and select features to u
 - Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* In case you would like to thank the peopl
