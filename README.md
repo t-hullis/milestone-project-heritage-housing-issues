@@ -1,6 +1,11 @@
 # Heritage Housing Issues
 
+![page 5](media/amireposive.png)
+
+
 This is a Machine Learning project, where i will provide a app which uses python, to perform  Data Analysis and Data Visualization, to be shown on a Streamlit powered front end. This is my final project as a student of the code instute.
+
+## Click [here](https://p5-heritage-housing.herokuapp.com) to live site.
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
@@ -100,6 +105,7 @@ This can be explored using correlation studdies.
 * terms and jargon;
 * information on the dataset; and
 * the business/client requirements.
+![page 1](media/page1.png)
 
 ### Page 2 - Sale Price Study
 This page answers the first buissness requirement:
@@ -107,6 +113,8 @@ This page answers the first buissness requirement:
 * Ticking box, displays the variable compared to sales price on graph plot.
 * Ticking box, displays Spearmanns Correlations
 * Ticking box displys PPS and correlations
+![page 2 ](media/page2a.png)
+![page 2 ](media/page2b.png)
 
 
 
@@ -116,22 +124,26 @@ This page answers the second buissness requirements:
 * Show the value of the house predicted
 * Display house data of friend that wishes to know there value
 * Show the value of her houses
+![page 3](media/page3a.png)
+![page 3](media/page3b.png)
 
 ### Page 4  -  Hypothosis and Validation
 * This page shows a breif description of the hyposis of this project
+![page 4](media/page4.png)
 
 ### Page 5  -  ML Model
 * Shows this pipeline used
 * Shows the most important features
 * Shows pipeline performance
-
+![page 5](media/page5.png)
 
 ## Fixed Bugs
-* There was a miss match between two of my pipelines in the modeling and evaluation notebook which caused 
+* There was a miss match between two of my pipelines in the modeling and evaluation notebook which caused an error.
 
 ## Unfixed Bugs
 * Graph for feature importance wont save, therefore wont show up on the ML model page of my app.
-* In Modeling and evuation notebook, my most important features have been selected wrong. GrLivArea has been missed off and replaced by a less important variable. This was partially solved by hand coding in the most important vars into my pipeline at a later step, therefore writing over the "wrong" set of most important vars.
+* In Modeling and evuation notebook, my most important features have been selected wrong. GrLivArea has been missed off and replaced by a less important variable, kitchen quality. This was partially solved by hand coding in the most important vars into my pipeline in a later step, therefore writing over the "wrong" set of most important vars.
+![bug](media/bugimportantvar.png)
 
 
 ## Deployment

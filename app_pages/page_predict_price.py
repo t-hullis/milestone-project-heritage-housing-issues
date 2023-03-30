@@ -39,10 +39,11 @@ def page_3_predict_body():
     st.write(filtered_df)
 
     st.write("After running them through the prediction app, their estimated prices are the following. \n\n "
-			"* $ \n"
-			"* $ \n"
-			"* $ \n"
-			"* $ ")
+			 f"* Index 0: 130,112\n"
+       		 f"* Index 1: 152,634\n"
+       		 f"* Index 2: 158,658\n"
+       		 f"* Index 3: 179,345\n"
+      		 f"* **Total: 627,564**\n")
 	
     st.write("---")
 
